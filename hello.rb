@@ -1,0 +1,1 @@
+puts('Hello my Ruby in git repository!')
