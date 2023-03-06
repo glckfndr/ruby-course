@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <title>My First Page</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="script/expand.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>Main Header Text</h1>
+      <h2> 
+        <small>Small Sub Header Text</small> 
+      </h2>
+    </div>
+  </header>
+  <!-- /Header -->
+  
+  <!--Navigation Menu and Login-->
+  <nav class="page-navigation">
+    <div class="container">
+      <!-- Main Menu -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <!-- /Main Menu -->
+
+      <!-- Login Form-->
+      <form action="post" class="login">
+        <input type="text" placeholder="Login">
+        <input type="password" placeholder="password">
+        <input type="submit" value="Sign in">
+      </form>
+      <!-- /Login Form-->
+    </div>
+  </nav>
+  <!-- /Navigation Menu Login-->
+  
+  <!-- Main-->
+  <main>  
+    <div class="container">
+      <h1 class="collection-title">Image Collection <small>Visualize Quality</small></h1>
+      <div class="collections">
+
+        <div class="collection-item-outer">
+          <div class="collection-item">
+            <img src="images/profile.jpg" alt="Image List" width="" height="">
+            <div class="collection-text">
+              <h3>List Element Item 1 List Element Item 1 List Element Item 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button onclick="expandContent(this)">Read more ...</button>
+            </div>            
+          </div>
+        </div>
+
+        <div class="collection-item-outer">
+          <div class="collection-item">
+            <img src="images/profile.jpg" alt="Image List" width="" height="">
+            <div class="collection-text">
+              <h3>List Element Item 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button onclick="expandContent(this)">Read more ...</button>
+            </div>            
+          </div>
+        </div>
+
+        <div class="collection-item-outer">
+          <div class="collection-item">
+            <img src="images/profile.jpg" alt="Image List" width="" height="">
+            <div class="collection-text">
+              <h3>List Element Item 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button onclick="expandContent(this)">Read more ...</button>
+            </div>            
+          </div>
+        </div>      
+      </div>   
+   
+    
+    <h1 class="collection-title">Video Collection <small>Visualize Quality</small></h1>
+    <div class="collections">
+      <div class="collection-item-outer">
+        <div class="collection-item">          
+          <video controls>
+            <source src="video/movie.mp4" type="video/mp4">
+          </video>
+        
+          
+          <div class="collection-text">
+            <h3>List Element Item</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button onclick="expandContent(this)">Read more ...</button>
+          </div>            
+        </div>
+      </div>
+
+      <div class="collection-item-outer">
+        <div class="collection-item">          
+          <video controls>
+            <source src="video/movie.mp4" type="video/mp4">
+          </video>
+        
+          
+          <div class="collection-text">
+            <h3>List Element Item</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button onclick="expandContent(this)">Read more ...</button>
+          </div>            
+        </div>
+      </div>
+
+      <div class="collection-item-outer">
+        <div class="collection-item">          
+          <video controls>
+            <source src="video/movie.mp4" type="video/mp4">
+          </video>
+        
+          
+          <div class="collection-text">
+            <h3>List Element Item</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button onclick="expandContent(this)">Read more ...</button>
+          </div>            
+        </div>
+      </div>
+      
+      
+
+  </div>
+</div>
+
+
+<table>
+  <caption>Заголовок</caption>
+  <thead>
+      <tr>
+          <th>Заголовок</th>
+          <th>Заголовок</th>
+          <th>Заголовок</th>
+          <th>Заголовок</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Текст</td>
+          <td>Текст</td>
+          <td>Текст</td>
+          <td>Текст</td>
+      </tr>
+      <tr>
+          <td>Текст</td>
+          <td>Текст</td>
+          <td>Текст</td>
+          <td>Текст</td>
+      </tr>
+  </tbody>
+  <tfoot>
+          <td>Текст</td>
+          <td>Текст</td>
+          <td>Текст</td>
+          <td>Текст</td>  
+  </tfoot>
+  </table>
+
+  <p>
+    <b>HTML</b> - стандартна мова розмітки веб-сторінок в <i>Інтернеті</i>. Більшість веб-сторінок створюються за <sub>допомогою</sub> 
+    мови HTML. 
+    Документ HTML <sup>оброблюється</sup> браузером та відтворюється на екрані у <small>звичному для людини</small> вигляді.
+   </p>
+  </main>
+  <!-- /Main-->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      Copywrite example.com 2023
+    </div>
+
+
+  </footer>
+  <!-- /Footer -->
+</body>
+</html>

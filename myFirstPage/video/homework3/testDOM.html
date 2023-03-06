@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Demo</title>
+  
+</head>
+<body>
+  <div class="_class">This div with class = "_class" </div>
+  <p id="_id" class="_class">This is "p" with class = "_class" and id  = "_id" </p>
+  <p id="_id">This is "p" with  id  = "_id" </p>
+  <p >This is "p" </p>
+  <input type="text">
+  <input type="password">
+
+  <ul id="list">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+  </ul>
+
+  <h1 id="title">Click on this text!</h1>
+  <br>
+  Enter your name: <input type="text" onfocus="changeColor(this)"/>
+
+<table>
+
+</table>
+
+  <ul id="test">
+    
+  </ul>
+
+  <input type="">
+
+<script>
+  (function(){
+     let idVar = document.getElementById("_id");
+     idVar.style.fontSize = "30px";
+
+     let arr = document.getElementsByClassName("_class");
+     document.getElmentBy
+     for(let i = 0; i < arr.length; i++){
+      arr[i].style.color = "red";
+     }
+
+      let ul = document.getElementById("test");
+      let li;
+      for(let i = 0; i < 3; i++){
+        li = document.createElement("li");
+        ul.appendChild(li);
+      }
+
+  })();
+
+ // function changeText(element){
+ //   element.innerHTML = "Oooooooops!"
+ // }
+ document.getElementById("title").onclick = function (){  this.innerHTML = "Oooooooops!"  }
+function changeColor(element){
+  element.style.backgroundColor = "yellow";
+}
+
+</script>
+  
+</body>
+</html>

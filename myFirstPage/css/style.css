@@ -1,0 +1,171 @@
+/* General Styles*/
+body {
+  font-family: Arial,  sans-serif;
+  font-size: 100%;
+}
+
+table {color: blue;}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.3em;
+}
+
+.container {
+  margin: 0  auto;
+  width: 900px;
+}
+
+/* Header*/
+ .header {
+  padding: 50px 0;
+  background-color: yellowgreen;
+ }
+
+ .header h1, .header h2 {
+  color: greenyellow;
+  text-align: center;
+ }
+
+ /* Navigation */
+ .page-navigation {
+  background-color: #222;
+  border-color: #101010;
+  min-height: 64px;
+ }
+
+ .page-navigation li {
+  float: left;
+  width: 100px;
+ }
+
+ .page-navigation a {
+  display: block;
+  color: #9d9d9d;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .page-navigation li a:hover {
+  color: yellowgreen;
+  background-color: black;;
+ }
+
+/* Login Form */
+.login {
+  padding: 15px 0;
+  float: right;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;  
+}
+
+.login input[type="submit"]{
+  padding: 5px 15px;
+  border: 1 px solid lightgray;
+  border-radius: 5px;
+}
+
+.login input[type="submit"]:hover,
+button:hover
+{
+  background-color: darkgray;
+  color: wheat !important;;
+}
+/* Main part */
+.collections{
+  overflow: auto;
+}
+.collection-title{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  font-size: 36px;
+}
+
+.collection-title small{
+  color: #777;  
+  font-size: 70%;
+}
+
+.collection-item-outer{
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 33.33%;
+}
+
+.collection-item {
+  border: 1px solid #959595;
+}
+
+.collection-item img,
+.collection-item video
+{ 
+  margin: -5px; 
+  width: 102%;
+   
+  
+}
+.collections div:first-child{
+padding-left: 0px;  
+padding-right: 5px;
+}
+
+.collections div:last-child{
+  padding-right: 0px;  
+  padding-left: 5px;
+}
+
+.collection-text{
+  padding: 0px 20px 20px 20px;
+}
+
+.collection-text h3{
+  color: yellowgreen;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;  
+
+}
+
+.collection-text p{
+  height: 65px;
+  overflow: hidden; 
+
+}
+
+.collection-text button{
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+.footer{
+  background-color: yellowgreen;
+  color: white;
+  padding: 20px 0;
+  margin-top: 30px;
+}

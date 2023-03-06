@@ -8,3 +8,5 @@ sum2 = sum1.(5)
 
 #puts sum3 = sum2.(7)
 puts sum2.call(7)
+
+
