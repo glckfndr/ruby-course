@@ -34,8 +34,6 @@ class Person
   end
 end
 
-
-
 e = Person.new('Eric B.')
 r = Person.new('Rakim')
 e.add_friend(r)

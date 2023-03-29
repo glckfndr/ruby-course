@@ -15,6 +15,3 @@ end
 
 class B < A
 end
-
-
-

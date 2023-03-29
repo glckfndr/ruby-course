@@ -1,6 +1,5 @@
 user_dic = {:oleh => "qwer", :galyna => "asdf"}
 
-
 attempt = 1
 max_attempt = 3
 while attempt <= max_attempt

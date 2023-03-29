@@ -5,10 +5,7 @@ class TestModule
     def print_module
         puts "TestModule"
         module_name  
-
     end
-
-
 end
 
 tst = TestModule.new

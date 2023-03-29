@@ -25,7 +25,7 @@ class Attendee
     def allowed_to_ride?(ride_minimum_height)
       (@height > ride_minimum_height)
     end
-  end
+end
 
-  puts Attendee.new(100).fits_ride?(100)
+puts Attendee.new(100).fits_ride?(100)
 
