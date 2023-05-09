@@ -1,7 +1,7 @@
 class Shape
- def self.sides=(value)
+  def self.sides=(value)
         puts "No Sides in Shape #{value}"
-    end
+  end
 end
 
 class Triangle < Shape
