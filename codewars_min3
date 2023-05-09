@@ -1,0 +1,87 @@
+def last_index(arr, num)
+  ind_min = []
+  arr.each_with_index{|x, k| ind_min.append(k) if x == num}
+  ind_min.last
+end
+
+def indexes(arr, num)
+  ind_min = []
+  arr.each_with_index{|x, k| ind_min.append(k) if x == num}  
+  ind_min
+end
+
+def smallest(n)
+  puts n
+  n_array = n.to_s.chars.map{|x| x.to_i}
+  i_max = n_array.length - 1
+  from = 0 
+  to = 0
+
+  for i in (0..(i_max - 1))
+    
+    d = n_array[i..i_max].min
+    max_el = n_array[i..i_max].max
+              
+    if indexes(n_array, d).length > 1 && n_array[i] == d && n_array[i + 1] != d 
+      ind_min = indexes(n_array, d)
+      from = ind_min.last
+      to = 0
+      n_array.insert(to, n_array[from])
+      n_array.delete_at(from + 1)
+      break
+    end
+
+      
+      
+      
+    if n_array[i + 1] == d 
+      
+      for s in ((i + 2)..i_max)
+        #puts "---#{n_array[s]}-----------#{n_array[i]}------"
+        if n_array[s] > n_array[i]
+          
+          from = i
+          to = s 
+          n_array.insert(to, n_array[from])
+          n_array.delete_at(from)
+          to -= 1
+          break
+        
+        
+        elsif s == i_max
+          from = i
+          to = i_max + 1
+          n_array.insert(to, n_array[from])
+          n_array.delete_at(from)
+          to -= 1
+        end
+      
+    end
+    break
+    end  
+    
+    
+    
+    
+    next if d == n_array[i]
+    ind_min = indexes(n_array, d)
+    p ind_min
+     if ind_min.length > 1 && (ind_min.last - ind_min[-2]) == 1
+       from = ind_min.last - 1
+     else
+      from = ind_min.last
+     end
+     d = n_array[from]
+     n_array.delete_at(from)
+     to = i
+     n_array.insert(i, d)
+     
+     break
+  end  
+     to -= 1 while to > 0 && n_array[to] == n_array[to - 1]  
+  out = n_array.map{|x| x.to_s}
+  if from == 1 && to == 0
+    from, to = to, from
+    end
+  [out.join.to_i, from, to]
+end
