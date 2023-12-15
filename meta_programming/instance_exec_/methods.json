@@ -1,0 +1,17 @@
+{
+"album": [
+  "title",
+  "group",
+  "year",
+  "label",
+  "length",
+  "track_counts"
+  ],
+"group": [
+  "title",
+  "creation_year",
+  "creation_place",
+  "website",
+  "leader"
+  ]
+}
