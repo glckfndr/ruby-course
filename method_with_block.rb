@@ -5,8 +5,8 @@ class Page
   end
 
   def show_page
-   # yield
-    yield @number
+    y = 7
+    @number = (yield @number, y) * 2
   end
 
   def show_number
@@ -14,11 +14,11 @@ class Page
   end
 end
 
-page = Page.new 10
-# page.show_page {puts "Page #{@number}"}
-#page.show_page {|x| puts "Page #{x}"}
-page.show_page do |x|
-  x = x * x 
-  puts "Page #{x}"
+page = Page.new 11
+
+page.show_page do |x, y|
+  x = x * x + y
+  puts "Page #{x} - #{y}"
+  x
 end
 page.show_number
