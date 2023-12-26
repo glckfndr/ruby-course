@@ -1,0 +1,33 @@
+module Swimmable
+  def swim
+    puts "I'm swimming!"
+  end
+end
+
+module Flyable
+  def fly
+    puts "I'm flying!"
+  end
+end
+
+class Animal
+  def speak
+    puts "The animal makes a sound."
+  end
+end
+
+class Dolphin < Animal
+  include Swimmable
+end
+
+class Bird < Animal
+  include Flyable
+end
+
+dolphin = Dolphin.new
+dolphin.swim   # Output: I'm swimming!
+dolphin.speak  # Output: The animal makes a sound.
+
+bird = Bird.new
+bird.fly       # Output: I'm flying!
+bird.speak     # Output: The animal makes a sound.
