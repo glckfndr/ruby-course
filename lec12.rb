@@ -1,13 +1,16 @@
+require './module1'
 class TestModule
-    require './module1'
-    include Module1
+  include MyModule
 
-    def print_module
-        puts "TestModule"
-        module_name  
-    end
+  def print_module
+    puts 'TestModule'  # module_name
+    p MyModule.multiple 7, 6
+  end
 end
 
 tst = TestModule.new
-tst.module_name
+
 tst.print_module
+p tst.multiple 11, 13
+
+p MyModule.multiple(-1, 6)

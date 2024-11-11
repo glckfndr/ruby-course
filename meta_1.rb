@@ -1,12 +1,11 @@
 class A
-  
   def my_name
     puts "-- Class name: #{self.class.name}"
   end
-  
+
   class << self
     def create_intance
-      self.new 
+      new
     end
   end
 
