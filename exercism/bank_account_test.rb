@@ -9,7 +9,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_single_deposit
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(100)
@@ -17,7 +17,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_multiple_deposits
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(100)
@@ -26,7 +26,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_withdraw_once
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(100)
@@ -35,7 +35,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_withdraw_twice
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(100)
@@ -45,7 +45,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_can_do_multiple_operations_sequentially
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(100)
@@ -57,7 +57,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_check_balance_of_closed_account
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.close
@@ -65,7 +65,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_deposit_into_closed_account
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.close
@@ -73,13 +73,13 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_deposit_into_unopened_account
-    skip
+    # skip
     bank_account = BankAccount.new
     assert_raises(ArgumentError, "You can't deposit money into a closed account") { bank_account.deposit(50) }
   end
 
   def test_cannot_withdraw_from_closed_account
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.close
@@ -87,20 +87,20 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_close_an_account_that_was_not_opened
-    skip
+    # skip
     bank_account = BankAccount.new
     assert_raises(ArgumentError, "You can't close an already closed account") { bank_account.close }
   end
 
   def test_cannot_open_an_already_opened_account
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     assert_raises(ArgumentError, "You can't open an already open account") { bank_account.open }
   end
 
   def test_reopened_account_does_not_retain_balance
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(50)
@@ -110,7 +110,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_withdraw_more_than_deposited
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(25)
@@ -118,7 +118,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_withdraw_negative
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     bank_account.deposit(100)
@@ -126,7 +126,7 @@ class BankAccountTest < Minitest::Test
   end
 
   def test_cannot_deposit_negative
-    skip
+    # skip
     bank_account = BankAccount.new
     bank_account.open
     assert_raises(ArgumentError, "You can't deposit a negative amount") { bank_account.deposit(-50) }
