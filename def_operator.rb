@@ -1,4 +1,3 @@
-#
 class Point
   attr_reader :x, :y
 
@@ -7,8 +6,8 @@ class Point
     @y = y
   end
 
-  def *(p)
-    @x * p.x + @y * p.y
+  def *(other)
+    @x * other.x + @y * other.y
   end
 
   def to_s

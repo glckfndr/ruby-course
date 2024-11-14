@@ -7,7 +7,10 @@ k = KlassWithSecret.new
 puts k.instance_exec(5) { |x| @secret + x }
 
 class Person
-  code = proc { |greetings| puts greetings; puts self }
+  code = proc { |greetings|
+    puts greetings
+    puts self
+  }
 
   define_method :name do
     self.class.instance_exec 'Good morning', &code
