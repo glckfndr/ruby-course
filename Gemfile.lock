@@ -1,11 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    language_server-protocol (3.17.0.3)
+    logger (1.6.1)
+    prism (1.2.0)
+    rbs (3.6.1)
+      logger
+    ruby-lsp (0.21.3)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 1.2, < 2.0)
+      rbs (>= 3, < 4)
+      sorbet-runtime (>= 0.5.10782)
+    sorbet-runtime (0.5.11647)
 
 PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  ruby-lsp (~> 0.21.3)
 
 BUNDLED WITH
    2.4.6
